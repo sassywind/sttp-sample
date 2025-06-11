@@ -1,9 +1,13 @@
-FROM hseeberger/scala-sbt:11.0.16_1.8.1_2.13.10
+FROM virtuslab/scala-cli:latest
 
 WORKDIR /app
+
+# copy sources
 COPY . .
 
-RUN sbt compile
+# pre-compile the project
+RUN scala-cli compile .
 
-CMD ["sbt", "run"]
+# run the application
+ENTRYPOINT ["scala-cli", "run", "."]
 
