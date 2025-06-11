@@ -25,4 +25,6 @@ object HelloWorld extends App {
     case Right(r) =>
       println(s"Origin's ip: ${r.origin}, header count: ${r.headers.size}")
   }
+
+  client.close()
 }
