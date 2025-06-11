@@ -1,3 +1,9 @@
+//> using lib "com.softwaremill.sttp.client3::core:3.8.6"
+//> using lib "com.softwaremill.sttp.client3::circe:3.8.6"
+//> using lib "io.circe::circe-core:0.12.3"
+//> using lib "io.circe::circe-generic:0.12.3"
+//> using lib "io.circe::circe-parser:0.12.3"
+
 import sttp.client3._
 import sttp.client3.circe._
 import sttp.model._
