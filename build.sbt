@@ -11,6 +11,7 @@ lazy val root = (project in file("."))
     name := "http-sample",
     libraryDependencies ++= Seq(
       Libraries.sttp,
-      Libraries.httpCirce
+      Libraries.httpCirce,
+      Libraries.httpClientBackend
     ) ++ Libraries.circe
   )
